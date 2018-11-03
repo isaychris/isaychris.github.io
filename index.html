@@ -1,7 +1,486 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Chris Banci</title>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Portfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://drive.google.com/file/d/1LYsqRz6Cnf6V5iUQX3bfrloISUBBjL8T/">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="jumbotron jumbotron-fluid" id="hero">
+    <div class="container">
+      <div class="media">
+        <img class="rounded-circle mr-5 profile" src="./images/profile.png" alt="Generic placeholder image">
+        <div class="media-body align-self-center">
+          <h1 class="mt-0">Hello! I'm Chris Banci</h1>
+          <p class="lead">I'm a programmer based in the San Diego area.</p>
+          <p>
+            I enjoy software and full-stack web development. I recently graduated from university and I'm
+            looking for an opportunity where I can further develop my skills and become a great addition to a team.
+            Let's have a chat!</p>
+
+          <ul class="contacts">
+            <li><a href="https://github.com/isaychris"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/christopher-banci-69448a86/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="mailto:chrisbanci@gmail.com"><i class="far fa-envelope"></i></a></li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h3>Skills</h3>
+    <table class="table-striped" style="width: 100%;">
+      <tbody>
+        <tr>
+          <td><strong>Languages</strong></td>
+          <td>C++, Java, Python, JavaScript</td>
+        </tr>
+        <tr>
+          <td><strong>Web Dev</strong></td>
+          <td>HTML, CSS, jQuery, Bootstrap, Flask, NodeJS, ExpressJS, ReactJS, RESTful APIs</td>
+        </tr>
+        <tr>
+          <td><strong>Database</strong></td>
+          <td>MySQL, Oracle, MongoDB</td>
+        </tr>
+        <tr>
+          <td><strong>Tools</strong></td>
+          <td>Git, Qt Creator, MySQL Workbench, Visual Studios, Jupyter, NumPy, BeautifulSoup, Postman</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="my-4">
+
+    <h3 id="projects">Featured Projects</h3>
+    <div class="card-deck">
+      <div class="card">
+        <a href="https://github.com/isaychris/litter-detection-tensorflow"><img class="card-img-top" src="https://i.imgur.com/eAYeRJr.gif"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">litter-detection-tensorflow</h5>
+          <p class="card-text">Object Detection algorithm trained to identify litter from Google Streets</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated May 2018</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/isaychris/get2gether"><img class="card-img-top" src="https://i.imgur.com/1rWeIHi.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">get2gether</h5>
+          <p class="card-text">
+            Group Calendar / Personal Assistant application developed with Qt software</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated December 2017</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/isaychris/sinkd"><img class="card-img-top" src="https://i.imgur.com/eYa1Lrq.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">sinkd</h5>
+          <p class="card-text">Sinkd is a file management website that brings the benefits of storage to the cloud.
+            Access your files anywhere, at any time.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated December 2017</small>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="card-deck">
+      <div class="card">
+        <a href="https://github.com/isaychris/react-social-network"><img class="card-img-top" src="https://i.imgur.com/b5gOnFZ.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">react-social-network</h5>
+          <p class="card-text">A photosharing social network powered by ReactJS, Express and Firebase Storage /
+            Authentication / Real-Time Database
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated November 2018</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/isaychris/reddit-clone"><img class="card-img-top" src="https://i.imgur.com/HbpGIZP.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">reddit-clone</h5>
+          <p class="card-text">A reddit clone written using node.js / express.js / mongodb / passport.js
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated October 2018</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/isaychris/CIS341/tree/master/CIS341_ProjectFinal"><img class="card-img-top" src="https://i.imgur.com/idU3ZMW.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">csusm-parking-management-system</h5>
+          <p class="card-text">
+            System analysis and design of a potential parking management system for CSUSM.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated May 2017</small>
+        </div>
+      </div>
+    </div><br>
+
+    <hr class="my-4">
+
+    <h3>Other Projects</h3>
+    <div class="card-deck">
+      <div class="card">
+        <a href="https://github.com/isaychris/CS512"><img class="card-img-top" src="https://i.ytimg.com/vi/d-zKJCKsoWw/maxresdefault.jpg"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">DE-BPSO</h5>
+          <p class="card-text">
+            Implementation of a differential evolution binary particle swarm optimization data mining model to predict
+            and discover the best combination of drugs to combat HIV.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated May 2018</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/isaychris/CS433/tree/master/CS433_Lab3"><img class="card-img-top" src="https://s3.envato.com/files/226202810/large-thumb.jpg"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">discrete-event-simulator</h5>
+          <p class="card-text">Simulator that analyzes the performance of various CPU scheduling algorithms such as
+            FCFS and SJF</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated March 2017</small>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://github.com/isaychris/CS433/tree/master/CS433_Lab2"><img class="card-img-top" src="https://images2.alphacoders.com/698/698137.jpg"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">unix-shell</h5>
+          <p class="card-text">
+            A simplistic implementation of a unix shell with custom commands written in c++
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated February 2017</small>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="card-deck">
+      <div class="card">
+        <a href="https://github.com/isaychris/react-calculator"><img class="card-img-top" src="https://i.imgur.com/oumVbiD.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">react-calculator</h5>
+          <p class="card-text">A simple calculator with a history feature powered by ReactJS</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated October 2018</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/isaychris/todo-app"><img class="card-img-top" src="https://i.imgur.com/AKTtyRU.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">todo-app</h5>
+          <p class="card-text">A todo web application written with the goal of learning how to use node.js / express.js
+            / mongodb / passport.js</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated October 2018</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/isaychris/zulrah-helper"><img class="card-img-top" src="https://i.imgur.com/PVaTutV.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">zulrah-helper</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated October 2018</small>
+        </div>
+      </div>
+    </div>
+    <br>
+
+
+    <div class="card-deck">
+      <div class="card">
+        <a href="https://github.com/isaychris/discord-bot-seiya"><img class="card-img-top" src="https://pmcvariety.files.wordpress.com/2018/05/discord-logo.jpg?w=1000&h=563&crop=1"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">discord-bot-seiya</h5>
+          <p class="card-text">
+            My personal discord bot written using discord.py API</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated May 2018</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/isaychris/twitch-runelite-plugin"><img class="card-img-top" src="https://i.imgur.com/tcNkCCD.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">twitch-runelite-plugin</h5>
+          <p class="card-text">RuneLite plugin that enables twitch emotes in oldschool runescape</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated August 2018</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/isaychris/themes"><img class="card-img-top" src="https://i.imgur.com/mB3lhKr.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">myanimelist-themes</h5>
+          <p class="card-text">
+            Custom themes for myanimelist
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated August 2018</small>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="card-deck">
+      <div class="card">
+        <a href="https://github.com/isaychris/flask-book-reviews"><img class="card-img-top" src="https://i.imgur.com/mLfzweu.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">flask-book-reviews</h5>
+          <p class="card-text">A simple website for reading and writing book reviews that using flask as the backend.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">September 2018</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/isaychris/flack-chat"><img class="card-img-top" src="https://i.imgur.com/OrLpqRr.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">flack-chat</h5>
+          <p class="card-text">Real-time chat web application powered by Flask & Socket.IO
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated August 2018</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/isaychris/osrs-world-pinger"><img class="card-img-top" src="https://i.imgur.com/LVVAJyT.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">osrs-world-pinger</h5>
+          <p class="card-text">Finds the latency for each world in oldschool runescape
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated August 2018</small>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="card-deck">
+      <div class="card">
+        <a href="https://github.com/isaychris/reddit-bot-dio"><img class="card-img-top" src="https://i.imgur.com/l60egHd.gif"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">dio-reddit-bot</h5>
+          <p class="card-text">A comment bot for reddit which uses the praw api to respond to latest comments from
+            /r/anime that contain the word dio with a picture of dio.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated May 2016</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/isaychris/typeracer-bot"><img class="card-img-top" src="https://cdn-images-1.medium.com/max/1200/1*UXQAvi5QYkzksq8lsIhy5A.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">typeracer-bot</h5>
+          <p class="card-text">typeracer bot powered by selenium</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated August 2018</small>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <a href="https://github.com/isaychris/gpx-streetview-imager"><img class="card-img-top" src="https://i.imgur.com/DJVnF7e.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">gpx-streetview-imager</h5>
+          <p class="card-text">
+            Pull google streetview images along a given path
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated August 2018</small>
+        </div>
+      </div>
+    </div>
+    <br>
+
+
+    <div class="card-deck">
+      <div class="card">
+        <a href="https://github.com/isaychris/snake-game"><img class="card-img-top" src="https://i.imgur.com/2r9GaWJ.gif"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">snake-game</h5>
+          <p class="card-text">The classic snake game playable from the command line written in c++</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated June 2018</small>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <a href="https://github.com/isaychris/mfq-queue-simulator"><img class="card-img-top" src="https://i.imgur.com/HVIFLvV.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">mfq-queue-simulator</h5>
+          <p class="card-text">Multi-Feedback Queue simulator application written with JavaFx
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated May 2016</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/isaychris/duelarena"><img class="card-img-top" src="https://stmed.net/sites/default/files/runescape-hd-wallpapers-33584-7507366.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">duelarena</h5>
+          <p class="card-text">A runescape gambling simulator with various games to bet in.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated December 2016</small>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="card-deck">
+      <div class="card">
+        <a href="https://github.com/isaychris/python-autotyper"><img class="card-img-top" src="https://martechtoday.com/wp-content/uploads/2018/08/robot-typing-keyboard-content-ss-1920-e1488404978929_vje8qp.jpg"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">python-autotyper-autoclicker</h5>
+          <p class="card-text">A simple auto typer and clicker with controls powered by pyautogui
+
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated May 2018</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/isaychris/cannonball-calc"><img class="card-img-top" src="https://i.imgur.com/ojwG3oC.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">runescape-cannonball-calc</h5>
+          <p class="card-text">Calculates the profit you can make from making cannonballs and also calculates the time
+            it takes to make them.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated July 2014</small>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://github.com/isaychris"><img class="card-img-top" src="https://marketplace-cdn.atlassian.com/files/images/cec44feb-0b1b-4fe3-936d-67a51a1fe28e.png"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">More on GitHub</h5>
+          <p class="card-text">All my projects and coursework on Github</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">https://github.com/isaychris</small>
+        </div>
+      </div>
+    </div>
+
+    <br>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
+
+<footer id="contact">
+Contact: chrisbanci@gmail.com
+</footer>
+
 </html>
