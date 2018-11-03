@@ -41,9 +41,11 @@
 <body>
   <div class="jumbotron jumbotron-fluid" id="hero">
     <div class="container">
-      <div class="media">
-        <img class="rounded-circle mr-5 profile" src="./images/profile.png" alt="Generic placeholder image">
-        <div class="media-body align-self-center">
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="rounded-circle profile align-self-center" src="./images/profile.png" alt="Generic placeholder image">
+        </div>
+        <div class="col-sm-9">
           <h1 class="mt-0">Hello! I'm Chris Banci</h1>
           <p class="lead">I'm a programmer based in the San Diego area.</p>
           <p>
@@ -117,8 +119,8 @@
             alt="Card image cap"></a>
         <div class="card-body">
           <h5 class="card-title">sinkd</h5>
-          <p class="card-text">Sinkd is a file management website that brings the benefits of storage to the cloud.
-            Access your files anywhere, at any time.
+          <p class="card-text">A file management website that brings the benefits of storage to the cloud.
+            Access your files anywhere, at any time
           </p>
         </div>
         <div class="card-footer">
@@ -133,8 +135,7 @@
             alt="Card image cap"></a>
         <div class="card-body">
           <h5 class="card-title">react-social-network</h5>
-          <p class="card-text">A photosharing social network powered by ReactJS, Express and Firebase Storage /
-            Authentication / Real-Time Database
+          <p class="card-text">A photosharing social network powered by ReactJS, Express and Google Firebase
           </p>
         </div>
         <div class="card-footer">
@@ -159,9 +160,9 @@
         <a href="https://github.com/isaychris/CIS341/tree/master/CIS341_ProjectFinal"><img class="card-img-top" src="https://i.imgur.com/idU3ZMW.png"
             alt="Card image cap"></a>
         <div class="card-body">
-          <h5 class="card-title">csusm-parking-management-system</h5>
+          <h5 class="card-title">parking-management-system</h5>
           <p class="card-text">
-            System analysis and design of a potential parking management system for CSUSM.
+            System analysis and design of a potential parking management system for CSUSM
           </p>
         </div>
         <div class="card-footer">
@@ -248,7 +249,7 @@
             alt="Card image cap"></a>
         <div class="card-body">
           <h5 class="card-title">zulrah-helper</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text">A simple tool that shows you the rotations of zulrah in runescape</p>
         </div>
         <div class="card-footer">
           <small class="text-muted">Last updated October 2018</small>
@@ -290,7 +291,7 @@
         <div class="card-body">
           <h5 class="card-title">myanimelist-themes</h5>
           <p class="card-text">
-            Custom themes for myanimelist
+            Custom themes for MyAnimeList
           </p>
         </div>
         <div class="card-footer">
@@ -306,7 +307,7 @@
             alt="Card image cap"></a>
         <div class="card-body">
           <h5 class="card-title">flask-book-reviews</h5>
-          <p class="card-text">A simple website for reading and writing book reviews that using flask as the backend.</p>
+          <p class="card-text">A simple website for reading and writing book reviews that using flask as the backend</p>
         </div>
         <div class="card-footer">
           <small class="text-muted">September 2018</small>
@@ -346,8 +347,8 @@
             alt="Card image cap"></a>
         <div class="card-body">
           <h5 class="card-title">dio-reddit-bot</h5>
-          <p class="card-text">A comment bot for reddit which uses the praw api to respond to latest comments from
-            /r/anime that contain the word dio with a picture of dio.
+          <p class="card-text">A comment bot for reddit which uses the praw api to respond with a picture of dio to latest comments from
+            /r/anime that contain the word dio
           </p>
         </div>
         <div class="card-footer">
@@ -417,7 +418,7 @@
             alt="Card image cap"></a>
         <div class="card-body">
           <h5 class="card-title">duelarena</h5>
-          <p class="card-text">A runescape gambling simulator with various games to bet in.
+          <p class="card-text">A runescape gambling simulator with various games to bet in
           </p>
         </div>
         <div class="card-footer">
@@ -448,7 +449,7 @@
         <div class="card-body">
           <h5 class="card-title">runescape-cannonball-calc</h5>
           <p class="card-text">Calculates the profit you can make from making cannonballs and also calculates the time
-            it takes to make them.</p>
+            it takes to make them</p>
         </div>
         <div class="card-footer">
           <small class="text-muted">Last updated July 2014</small>
@@ -480,7 +481,24 @@
 </body>
 
 <footer id="contact">
-Contact: chrisbanci@gmail.com
+  <div class="container" id="footer-wrap">
+    <div id="footer-title">
+      <h3>Get in touch with me!</h3>
+      <p>Alternatively, you can email me directly at <strong>chrisbanci@gmail.com</strong><p>
+    </div>
+    <form method="POST" action="https://formspree.io/chrisbanci@gmail.com">
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email: </label>
+        <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Body: </label>
+        <textarea name="body" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hi Chris!" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br>
+  </div>
 </footer>
 
 </html>
