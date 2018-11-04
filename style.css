@@ -1,7 +1,46 @@
+html {
+    background-color: #f8f9fa !important
+}
+
 #hero {
-    background-image: url('./images/lines.png'), linear-gradient(45deg,#4fa49a,#4361c2) !important;
+    background-image: url('./images/lines.png'), linear-gradient(45deg, #4fa49a, #4361c2) !important;
     background-position: 50% 0px;
-	color: white;
+    color: white;
+}
+
+#hero-body {
+    font-weight: 300;
+}
+
+#hero-title,
+#hero-subtitle,
+#hero-body,
+#contacts,
+#profile {
+    align-self: center;
+    text-align: center;
+}
+
+#profile {
+    display: block;
+    margin: auto;
+}
+
+#contacts {
+    font-size: 20px;
+}
+
+#contacts a {
+    color: rgba(255, 255, 255, .8);
+}
+
+#contacts a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+#profile {
+    height: 200px;
+    width: 200px;
 }
 
 ul {
@@ -11,49 +50,49 @@ ul {
 }
 
 li {
-	display: inline;
-	margin-right:20px;
-}
-html {
-    background-color: #f8f9fa !important
-}
-
-.img-thumbnail {
-    height: 300px;
+    display: inline;
+    margin-right: 20px;
 }
 
 .card img {
-    height: 175px;
+    height: 180px;
+    object-fit: cover;
 }
-
-.profile {
-	height: 200px;
-	width: 200px;
-}
-
-.contacts {
-	font-size: 20px;
-}
-.contacts a {
-		color: rgba(255,255,255,.8);
-}
-
-.contacts a:hover {
-		color: rgba(255,255,255, 1);
-}
-
 
 footer {
-	color: #6c757d;
+    color: #6c757d;
     padding: 19px;
     margin-top: 20px;
     background-color: #f8f9fa;
 }
 
 #footer-title {
-	text-align: center;
+    text-align: center;
 }
 
 #footer-wrap {
-	max-width: 700px;
+    max-width: 700px;
+}
+
+@media (min-width: 992px) {
+
+    #hero-title,
+    #hero-subtitle,
+    #hero-body,
+    #contacts,
+    #profile {
+        text-align: left;
+    }
+}
+
+@media (max-width: 992px) {
+    .card-deck .card {
+        flex-basis: 50%;
+        margin-bottom: 20px;
+        /* change this value for each breakpoint*/
+    }
+
+    .card img {
+        height: 250px;
+    }
 }
